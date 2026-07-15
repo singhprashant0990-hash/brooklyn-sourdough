@@ -182,7 +182,7 @@ function Index() {
             <span className="inline-block reveal-in" style={{ animationDelay: "0.05s" }}>The Good</span><br />
             <span className="inline-block reveal-in" style={{ animationDelay: "0.25s" }}>Sourdough</span>
           </h2>
-          <div className="relative mt-8 w-full max-w-[299px] mx-auto reveal-in" style={{ animationDelay: "0.45s" }}>
+          <div className="relative mt-8 w-full max-w-[269px] mx-auto reveal-in" style={{ animationDelay: "0.45s" }}>
             <button onClick={openOrder} aria-label="Order Now" className="block w-full transition-transform hover:scale-[1.03] active:scale-[0.98]">
               <img src={orderBtnImg} alt="Order Now" className="block w-full h-auto drop-shadow-2xl" />
             </button>
@@ -542,7 +542,7 @@ function LocationModal({ onClose }: { onClose: () => void }) {
 
   return (
     <div
-      className="location-modal-backdrop fixed inset-0 z-[100] flex items-end justify-center p-3 sm:items-center sm:p-6"
+      className="location-modal-backdrop fixed inset-0 z-[100] flex items-center justify-center p-4"
       style={{ backgroundColor: "rgba(23, 31, 21, 0.72)" }}
       onClick={onClose}
     >
@@ -550,7 +550,7 @@ function LocationModal({ onClose }: { onClose: () => void }) {
         role="dialog"
         aria-modal="true"
         aria-labelledby="location-modal-title"
-        className="location-modal-panel relative w-full max-w-[420px] overflow-hidden rounded-[30px] border p-5 shadow-[0_28px_80px_rgba(20,30,18,0.34)] sm:p-7"
+        className="location-modal-panel relative w-full max-w-[380px] overflow-hidden rounded-[26px] border p-5 shadow-[0_28px_80px_rgba(20,30,18,0.34)]"
         style={{ backgroundColor: CREAM, borderColor: "rgba(84,114,75,0.16)" }}
         onClick={(event) => event.stopPropagation()}
       >
@@ -871,7 +871,7 @@ function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contact us on WhatsApp"
-      className="fixed right-[max(1rem,calc((100vw-480px)/2+1rem))] bottom-5 z-50 block aspect-[3.58/1] w-[min(78vw,350px)] overflow-hidden rounded-full animate-whatsapp-float shadow-[0_6px_20px_rgba(0,0,0,0.22)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
+      className="fixed right-[max(1rem,calc((100vw-480px)/2+1rem))] bottom-5 z-50 block aspect-[3.58/1] w-[min(39vw,175px)] overflow-hidden rounded-full animate-whatsapp-float shadow-[0_4px_14px_rgba(0,0,0,0.2)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
     >
       <img
         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Jul%2016%2C%202026%2C%2002_16_29%20AM-wcGIZTbUdUMEzmrANr4T5tUZCDMkMc.png"

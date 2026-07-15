@@ -15,220 +15,220 @@ globalThis.__nitro_vite_envs__ = services;
 //#endregion
 //#region #nitro/virtual/public-assets-data
 var public_assets_data_default = {
-	"/icon-light-32x32.png": {
+	"/apple-icon.png": {
 		"type": "image/png",
-		"etag": "\"236-1LCyzDLVe8SSrsZvG9eS1rhTvHw\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
-		"size": 566,
-		"path": "../public/icon-light-32x32.png"
+		"etag": "\"a42-o953JxvIavDjStfvW8JRF7vWLk4\"",
+		"mtime": "2026-07-15T21:00:32.165Z",
+		"size": 2626,
+		"path": "../public/apple-icon.png"
 	},
 	"/icon-dark-32x32.png": {
 		"type": "image/png",
 		"etag": "\"249-Eje7mf5IYnUOzvWahZHzVZgkxwI\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
+		"mtime": "2026-07-15T21:00:32.165Z",
 		"size": 585,
 		"path": "../public/icon-dark-32x32.png"
 	},
-	"/apple-icon.png": {
+	"/icon-light-32x32.png": {
 		"type": "image/png",
-		"etag": "\"a42-o953JxvIavDjStfvW8JRF7vWLk4\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
-		"size": 2626,
-		"path": "../public/apple-icon.png"
+		"etag": "\"236-1LCyzDLVe8SSrsZvG9eS1rhTvHw\"",
+		"mtime": "2026-07-15T21:00:32.165Z",
+		"size": 566,
+		"path": "../public/icon-light-32x32.png"
 	},
 	"/icon.svg": {
 		"type": "image/svg+xml",
 		"etag": "\"518-9M+7JU4r6V/KOpL+LPj+dv/tp9E\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
+		"mtime": "2026-07-15T21:00:32.165Z",
 		"size": 1304,
 		"path": "../public/icon.svg"
+	},
+	"/placeholder.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"428-IKS5JfbV4RoTBDDc/wuWqgR2Qhw\"",
+		"mtime": "2026-07-15T21:00:32.165Z",
+		"size": 1064,
+		"path": "../public/placeholder.jpg"
 	},
 	"/placeholder-logo.svg": {
 		"type": "image/svg+xml",
 		"etag": "\"c88-Vv8IA2xgjEZAiN2dErxBClzvxAM\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
+		"mtime": "2026-07-15T21:00:32.165Z",
 		"size": 3208,
 		"path": "../public/placeholder-logo.svg"
 	},
 	"/placeholder-logo.png": {
 		"type": "image/png",
 		"etag": "\"238-pS23KseK6wWmMHqaT+IrH57MhUI\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
+		"mtime": "2026-07-15T21:00:32.165Z",
 		"size": 568,
 		"path": "../public/placeholder-logo.png"
 	},
 	"/assets/brooklyn-sourdough-header-logo-DtC9CJG7.png": {
 		"type": "image/png",
 		"etag": "\"34b60-gzb+r/HgMrVmQedEWUJbiVzUxXQ\"",
-		"mtime": "2026-07-15T20:54:10.985Z",
+		"mtime": "2026-07-15T21:00:31.173Z",
 		"size": 215904,
 		"path": "../public/assets/brooklyn-sourdough-header-logo-DtC9CJG7.png"
+	},
+	"/placeholder-user.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"663-C3c0t/BkPcGmoKQMFVHBP6o+6fQ\"",
+		"mtime": "2026-07-15T21:00:32.165Z",
+		"size": 1635,
+		"path": "../public/placeholder-user.jpg"
 	},
 	"/assets/classic-sourdough-gift-box-Fn3ZNhGt.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"183b9-CPTqY3ZvAu/YTFbtEvNw7cLRMHo\"",
-		"mtime": "2026-07-15T20:54:10.989Z",
+		"mtime": "2026-07-15T21:00:31.173Z",
 		"size": 99257,
 		"path": "../public/assets/classic-sourdough-gift-box-Fn3ZNhGt.jpg"
 	},
 	"/placeholder.svg": {
 		"type": "image/svg+xml",
 		"etag": "\"cb5-3cfZ/x0uNhX4kurZGAkOBE4K/G0\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
+		"mtime": "2026-07-15T21:00:32.165Z",
 		"size": 3253,
 		"path": "../public/placeholder.svg"
 	},
 	"/assets/crc-kashrus-seal-VOD0sX9B.png": {
 		"type": "image/png",
 		"etag": "\"9f8b-U0cH4ZZ0MND5bxWRTa1jiXedgFg\"",
-		"mtime": "2026-07-15T20:54:10.989Z",
+		"mtime": "2026-07-15T21:00:31.181Z",
 		"size": 40843,
 		"path": "../public/assets/crc-kashrus-seal-VOD0sX9B.png"
-	},
-	"/placeholder-user.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"663-C3c0t/BkPcGmoKQMFVHBP6o+6fQ\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
-		"size": 1635,
-		"path": "../public/placeholder-user.jpg"
-	},
-	"/placeholder.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"428-IKS5JfbV4RoTBDDc/wuWqgR2Qhw\"",
-		"mtime": "2026-07-15T20:54:11.937Z",
-		"size": 1064,
-		"path": "../public/placeholder.jpg"
 	},
 	"/assets/gift-box-hero-bg-Cs4ryKNf.jpeg": {
 		"type": "image/jpeg",
 		"etag": "\"26fb4-zxuqfGfjA21Vk2Wey6ST1EUQ3KU\"",
-		"mtime": "2026-07-15T20:54:11.021Z",
+		"mtime": "2026-07-15T21:00:31.209Z",
 		"size": 159668,
 		"path": "../public/assets/gift-box-hero-bg-Cs4ryKNf.jpeg"
 	},
-	"/assets/index-Bekd8tSZ.js": {
+	"/assets/index-WEb9brDz.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"5439c-N/87gUcL2XYj9K86Jmo2oitH2G0\"",
-		"mtime": "2026-07-15T20:54:10.985Z",
+		"etag": "\"5439c-o1+GQ4uyoxcMgb8LYSmcKF25bas\"",
+		"mtime": "2026-07-15T21:00:31.169Z",
 		"size": 344988,
-		"path": "../public/assets/index-Bekd8tSZ.js"
+		"path": "../public/assets/index-WEb9brDz.js"
 	},
 	"/assets/baker-waves-hand-on-table-BY4LgEUh.mp4": {
 		"type": "video/mp4",
 		"etag": "\"d066a-hS2qJm8DYcFN/Znrl+yGZfUlpUw\"",
-		"mtime": "2026-07-15T20:54:10.985Z",
+		"mtime": "2026-07-15T21:00:31.169Z",
 		"size": 853610,
 		"path": "../public/assets/baker-waves-hand-on-table-BY4LgEUh.mp4"
 	},
 	"/assets/custom-order-now-DTwbtrO1.png": {
 		"type": "image/png",
 		"etag": "\"a1a82-RcF1vg1+Tk6mcQXtWQra1o6mqxs\"",
-		"mtime": "2026-07-15T20:54:11.021Z",
+		"mtime": "2026-07-15T21:00:31.205Z",
 		"size": 662146,
 		"path": "../public/assets/custom-order-now-DTwbtrO1.png"
-	},
-	"/assets/craft-brooklyn-seal-DCXzxIbf.png": {
-		"type": "image/png",
-		"etag": "\"15682a-2atTNRQnYRlwBcRz0/TbSevN3jM\"",
-		"mtime": "2026-07-15T20:54:10.989Z",
-		"size": 1402922,
-		"path": "../public/assets/craft-brooklyn-seal-DCXzxIbf.png"
-	},
-	"/assets/location-boro-park-CzIT8mvm.png": {
-		"type": "image/png",
-		"etag": "\"15e698-pVGQ0n1AFFRVDncIPhe5bgzVVL0\"",
-		"mtime": "2026-07-15T20:54:11.021Z",
-		"size": 1435288,
-		"path": "../public/assets/location-boro-park-CzIT8mvm.png"
 	},
 	"/assets/location-lakewood-CBsI0VyF.png": {
 		"type": "image/png",
 		"etag": "\"16291a-ONo2ZRCHGQovjPHH9IQB+JUX8C8\"",
-		"mtime": "2026-07-15T20:54:11.021Z",
+		"mtime": "2026-07-15T21:00:31.209Z",
 		"size": 1452314,
 		"path": "../public/assets/location-lakewood-CBsI0VyF.png"
 	},
 	"/assets/location-monsey-BsFxBxc_.png": {
 		"type": "image/png",
 		"etag": "\"168694-TagNkF7HeaPXbFyeFjCTMfRugFQ\"",
-		"mtime": "2026-07-15T20:54:11.025Z",
+		"mtime": "2026-07-15T21:00:31.209Z",
 		"size": 1476244,
 		"path": "../public/assets/location-monsey-BsFxBxc_.png"
 	},
 	"/assets/craft-kosher-seals-BpZR_IpF.png": {
 		"type": "image/png",
 		"etag": "\"1fa4be-L83YQZDK23+dt4WA4/ns3e+EcaE\"",
-		"mtime": "2026-07-15T20:54:10.989Z",
+		"mtime": "2026-07-15T21:00:31.177Z",
 		"size": 2073790,
 		"path": "../public/assets/craft-kosher-seals-BpZR_IpF.png"
 	},
-	"/assets/routes-BVtjjTLW.js": {
+	"/assets/routes-Dc1UfV0S.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"9ad0-DxvUOHnGSQ/ANEmshBaH6wYHbHA\"",
-		"mtime": "2026-07-15T20:54:10.985Z",
-		"size": 39632,
-		"path": "../public/assets/routes-BVtjjTLW.js"
+		"etag": "\"9ab4-FkVEVIZ4sc3YwKH1k+SZk3+pseQ\"",
+		"mtime": "2026-07-15T21:00:31.169Z",
+		"size": 39604,
+		"path": "../public/assets/routes-Dc1UfV0S.js"
 	},
 	"/assets/sourdough-dips-product-BNQFR9YN.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"2d410-KMHLzt3vl1aa8FssWeiLZGXtgJU\"",
-		"mtime": "2026-07-15T20:54:11.049Z",
+		"mtime": "2026-07-15T21:00:31.217Z",
 		"size": 185360,
 		"path": "../public/assets/sourdough-dips-product-BNQFR9YN.jpg"
 	},
-	"/assets/styles-_O4wkbvI.css": {
+	"/assets/styles-B6tVsBxV.css": {
 		"type": "text/css; charset=utf-8",
-		"etag": "\"13551-7CpNTOtz56vPpRLVQQ69QD1giLs\"",
-		"mtime": "2026-07-15T20:54:11.049Z",
-		"size": 79185,
-		"path": "../public/assets/styles-_O4wkbvI.css"
+		"etag": "\"134b2-eGWGN5gXWXA9itzeoJYBT8fNFS0\"",
+		"mtime": "2026-07-15T21:00:31.217Z",
+		"size": 79026,
+		"path": "../public/assets/styles-B6tVsBxV.css"
+	},
+	"/assets/location-williamsburg-YUFhBGm_.png": {
+		"type": "image/png",
+		"etag": "\"16a4a9-zCYyTh3Lpn3k6LLw52IQzrHGG3E\"",
+		"mtime": "2026-07-15T21:00:31.213Z",
+		"size": 1483945,
+		"path": "../public/assets/location-williamsburg-YUFhBGm_.png"
+	},
+	"/assets/craft-brooklyn-seal-DCXzxIbf.png": {
+		"type": "image/png",
+		"etag": "\"15682a-2atTNRQnYRlwBcRz0/TbSevN3jM\"",
+		"mtime": "2026-07-15T21:00:31.177Z",
+		"size": 1402922,
+		"path": "../public/assets/craft-brooklyn-seal-DCXzxIbf.png"
+	},
+	"/assets/location-boro-park-CzIT8mvm.png": {
+		"type": "image/png",
+		"etag": "\"15e698-pVGQ0n1AFFRVDncIPhe5bgzVVL0\"",
+		"mtime": "2026-07-15T21:00:31.209Z",
+		"size": 1435288,
+		"path": "../public/assets/location-boro-park-CzIT8mvm.png"
+	},
+	"/assets/crystal-arak-gift-box-BrJg_78X.png": {
+		"type": "image/png",
+		"etag": "\"285244-PgsuqIqxPO06P5zXuWXw+LocjtY\"",
+		"mtime": "2026-07-15T21:00:31.181Z",
+		"size": 2642500,
+		"path": "../public/assets/crystal-arak-gift-box-BrJg_78X.png"
 	},
 	"/assets/classic-country-sourdough-boule-CsA3vo-Z.png": {
 		"type": "image/png",
 		"etag": "\"2781f8-3BZZJnFU89uIhy/xEzDPpUdQebk\"",
-		"mtime": "2026-07-15T20:54:10.985Z",
+		"mtime": "2026-07-15T21:00:31.173Z",
 		"size": 2589176,
 		"path": "../public/assets/classic-country-sourdough-boule-CsA3vo-Z.png"
 	},
 	"/assets/braided-sourdough-challah-ES_FQ6SW.png": {
 		"type": "image/png",
 		"etag": "\"2a405e-snXXWb4nyabyUm1D7KnW6mn5AaI\"",
-		"mtime": "2026-07-15T20:54:10.985Z",
+		"mtime": "2026-07-15T21:00:31.169Z",
 		"size": 2768990,
 		"path": "../public/assets/braided-sourdough-challah-ES_FQ6SW.png"
-	},
-	"/assets/crystal-arak-gift-box-BrJg_78X.png": {
-		"type": "image/png",
-		"etag": "\"285244-PgsuqIqxPO06P5zXuWXw+LocjtY\"",
-		"mtime": "2026-07-15T20:54:10.989Z",
-		"size": 2642500,
-		"path": "../public/assets/crystal-arak-gift-box-BrJg_78X.png"
-	},
-	"/assets/location-williamsburg-YUFhBGm_.png": {
-		"type": "image/png",
-		"etag": "\"16a4a9-zCYyTh3Lpn3k6LLw52IQzrHGG3E\"",
-		"mtime": "2026-07-15T20:54:11.025Z",
-		"size": 1483945,
-		"path": "../public/assets/location-williamsburg-YUFhBGm_.png"
 	},
 	"/assets/olive-pairing-gift-box-zKKTi9_7.png": {
 		"type": "image/png",
 		"etag": "\"272c2b-i4KLyELPgKOpNREAKgimQkRVumE\"",
-		"mtime": "2026-07-15T20:54:11.037Z",
+		"mtime": "2026-07-15T21:00:31.213Z",
 		"size": 2567211,
 		"path": "../public/assets/olive-pairing-gift-box-zKKTi9_7.png"
 	},
 	"/assets/seeded-sourdough-boule-BDPZVh2o.png": {
 		"type": "image/png",
 		"etag": "\"2c837d-KL//3kuo2ArphRfg2qUl3AONsEY\"",
-		"mtime": "2026-07-15T20:54:11.045Z",
+		"mtime": "2026-07-15T21:00:31.217Z",
 		"size": 2917245,
 		"path": "../public/assets/seeded-sourdough-boule-BDPZVh2o.png"
 	},
 	"/assets/custom-hero-loop-CPl5xujN.mp4": {
 		"type": "video/mp4",
 		"etag": "\"167d2c3-lJhA2K1aNp4hPpDDL3gO3vw4AsA\"",
-		"mtime": "2026-07-15T20:54:10.993Z",
+		"mtime": "2026-07-15T21:00:31.181Z",
 		"size": 23581379,
 		"path": "../public/assets/custom-hero-loop-CPl5xujN.mp4"
 	}
