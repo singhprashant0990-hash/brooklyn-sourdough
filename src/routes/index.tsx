@@ -528,69 +528,107 @@ function LocationModal({ onClose }: { onClose: () => void }) {
     { name: "Lakewood", icon: locationLakewood, status: "soon" as const, href: null },
   ];
 
-  return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-5 animate-fade-up" style={{ backgroundColor: "rgba(0,0,0,0.55)" }} onClick={onClose}>
-      <div className="relative w-full max-w-[300px] rounded-[22px] p-4 pt-5" style={{ backgroundColor: CREAM }} onClick={(e) => e.stopPropagation()}>
-        <button aria-label="Close" onClick={onClose} className="absolute top-3 right-3 h-7 w-7 rounded-full border flex items-center justify-center hover:bg-black/5" style={{ borderColor: "rgba(0,0,0,0.15)" }}>
-          <X className="h-3 w-3" />
-        </button>
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
 
-        <div className="flex flex-col items-center">
-          <div className="relative h-10 w-10 rounded-full flex items-center justify-center" style={{ backgroundColor: "#F3EAD3" }}>
-            <MapPin className="h-5 w-5" style={{ color: BRAND }} fill={BRAND} />
-            <span className="absolute -bottom-0.5 h-1.5 w-4 rounded-full" style={{ backgroundColor: YELLOW }} />
+  return (
+    <div
+      className="location-modal-backdrop fixed inset-0 z-[100] flex items-end justify-center p-3 sm:items-center sm:p-6"
+      style={{ backgroundColor: "rgba(23, 31, 21, 0.72)" }}
+      onClick={onClose}
+    >
+      <section
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="location-modal-title"
+        className="location-modal-panel relative w-full max-w-[420px] overflow-hidden rounded-[30px] border p-5 shadow-[0_28px_80px_rgba(20,30,18,0.34)] sm:p-7"
+        style={{ backgroundColor: CREAM, borderColor: "rgba(84,114,75,0.16)" }}
+        onClick={(event) => event.stopPropagation()}
+      >
+        <div className="flex items-start justify-between gap-5">
+          <div className="flex min-w-0 items-center gap-3.5">
+            <div className="location-pin-pop flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl" style={{ backgroundColor: BRAND }}>
+              <MapPin className="h-5 w-5" style={{ color: CREAM }} strokeWidth={2.2} />
+            </div>
+            <div>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.18em]" style={{ color: BRAND }}>Order fresh</p>
+              <h3 id="location-modal-title" className="mt-0.5 text-balance font-display text-[25px] leading-none" style={{ color: BRAND }}>Choose a location</h3>
+            </div>
           </div>
-          <h3 className="mt-2 font-display text-[18px] leading-tight text-center" style={{ color: BRAND }}>Choose Your Location</h3>
-          <p className="mt-1 text-[10px] text-center opacity-70" style={{ color: BRAND }}>Select your nearest Brooklyn Sourdough store.</p>
+          <button
+            type="button"
+            aria-label="Close location selector"
+            onClick={onClose}
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-transform duration-200 hover:scale-105 active:scale-95"
+            style={{ borderColor: "rgba(84,114,75,0.2)", color: BRAND }}
+          >
+            <X className="h-4 w-4" />
+          </button>
         </div>
 
-        <div className="mt-4 flex flex-col gap-2">
-          {locations.map((loc) => {
-            const isAvail = loc.status === "available";
-            const clickable = !!loc.href;
-            const Row = (
+        <p className="mt-5 text-[14px] leading-relaxed" style={{ color: "rgba(84,114,75,0.78)" }}>
+          Select your nearest bakery to see availability and place your order.
+        </p>
+
+        <div className="mt-5 flex flex-col gap-2.5">
+          {locations.map((loc, index) => {
+            const isAvailable = loc.status === "available";
+            const isClickable = Boolean(loc.href);
+            const locationRow = (
               <div
-                className="flex items-center gap-3 rounded-xl px-3 py-2 border transition-all"
+                className="location-row flex min-h-[78px] items-center gap-3 rounded-2xl border px-3 py-2.5 transition-all duration-300"
                 style={{
-                  borderColor: isAvail ? BRAND : "rgba(0,0,0,0.08)",
-                  borderWidth: isAvail ? 1.5 : 1,
-                  backgroundColor: isAvail ? "#FBF5E8" : "#F2EFE7",
-                  opacity: isAvail ? 1 : 0.75,
-                  cursor: clickable ? "pointer" : "default",
+                  animationDelay: `${150 + index * 70}ms`,
+                  borderColor: isClickable ? "rgba(84,114,75,0.32)" : "rgba(84,114,75,0.1)",
+                  backgroundColor: isClickable ? "rgba(255,255,255,0.62)" : "rgba(84,114,75,0.045)",
+                  opacity: isAvailable ? 1 : 0.66,
+                  cursor: isClickable ? "pointer" : "default",
                 }}
               >
-                <div className="h-14 w-14 shrink-0">
-                  <img src={loc.icon} alt={loc.name} className="block h-full w-full object-contain" />
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl" style={{ backgroundColor: "rgba(84,114,75,0.07)" }}>
+                  <img src={loc.icon} alt="" className="h-full w-full object-contain p-1" />
                 </div>
-                <div className="flex-1 min-w-0">
-                  <div className="font-display text-[13px] leading-tight" style={{ color: isAvail ? BRAND : "#8a8a83" }}>{loc.name}</div>
-                  <div className="mt-0.5 flex items-center gap-1 text-[9px]" style={{ color: isAvail ? "#3a7a4a" : "#9a988e" }}>
-                    <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: isAvail ? "#4CAF50" : "#B4B1A6" }} />
-                    {isAvail ? "Available" : "Coming Soon"}
+                <div className="min-w-0 flex-1">
+                  <p className="font-display text-[17px] leading-tight" style={{ color: BRAND }}>{loc.name}</p>
+                  <div className="mt-1 flex items-center gap-1.5 text-[11px] font-medium" style={{ color: isAvailable ? BRAND : "rgba(84,114,75,0.68)" }}>
+                    <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: isAvailable ? BRAND : "rgba(84,114,75,0.36)" }} />
+                    {isAvailable ? "Open for orders" : "Coming soon"}
                   </div>
                 </div>
-                {isAvail ? (
-                  <ChevronRight className="h-4 w-4" style={{ color: BRAND }} />
-                ) : (
-                  <span className="rounded-full px-2 py-0.5 text-[9px] font-semibold" style={{ backgroundColor: "#F9D48A", color: "#7a5a1a" }}>
-                    Soon
+                {isClickable ? (
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5" style={{ backgroundColor: BRAND, color: CREAM }}>
+                    <ChevronRight className="h-4 w-4" />
                   </span>
+                ) : (
+                  <span className="shrink-0 rounded-full px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.08em]" style={{ backgroundColor: "rgba(84,114,75,0.1)", color: BRAND }}>Soon</span>
                 )}
               </div>
             );
-            return clickable ? (
-              <a key={loc.name} href={loc.href!} target="_blank" rel="noopener noreferrer" onClick={onClose}>{Row}</a>
+
+            return isClickable ? (
+              <a key={loc.name} href={loc.href!} target="_blank" rel="noopener noreferrer" onClick={onClose} className="group rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2" style={{ outlineColor: BRAND }}>
+                {locationRow}
+              </a>
             ) : (
-              <div key={loc.name}>{Row}</div>
+              <div key={loc.name}>{locationRow}</div>
             );
           })}
         </div>
 
-        <div className="mt-4 flex items-center justify-center gap-1.5 text-[9px]" style={{ color: BRAND }}>
-          <ShieldCheck className="h-3 w-3" />
-          <span className="opacity-80">Freshly baked. Locally delivered.</span>
+        <div className="mt-5 flex items-center justify-center gap-2 border-t pt-4 text-[11px] font-medium" style={{ borderColor: "rgba(84,114,75,0.12)", color: "rgba(84,114,75,0.72)" }}>
+          <ShieldCheck className="h-4 w-4" />
+          <span>Freshly baked · Secure ordering</span>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

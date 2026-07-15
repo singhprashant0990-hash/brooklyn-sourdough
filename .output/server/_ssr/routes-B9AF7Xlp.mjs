@@ -2,7 +2,7 @@ import { n as __toESM } from "../_runtime.mjs";
 import { o as performance_default } from "../_libs/h3+rou3+srvx+unenv.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Menu, c as Clock, i as Phone, l as ChevronRight, n as Star, o as MapPin, r as ShieldCheck, s as Instagram, t as X, u as Check } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CL1QfE1Z.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-B9AF7Xlp.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var custom_hero_loop_default = "/assets/custom-hero-loop-CPl5xujN.mp4";
@@ -723,141 +723,171 @@ function ProductRail() {
 	});
 }
 function LocationModal({ onClose }) {
+	const locations = [
+		{
+			name: "Williamsburg",
+			icon: location_williamsburg_default,
+			status: "available",
+			href: TOAST_URL
+		},
+		{
+			name: "Boro Park",
+			icon: location_boro_park_default,
+			status: "available",
+			href: null
+		},
+		{
+			name: "Monsey",
+			icon: location_monsey_default,
+			status: "soon",
+			href: null
+		},
+		{
+			name: "Lakewood",
+			icon: location_lakewood_default,
+			status: "soon",
+			href: null
+		}
+	];
+	(0, import_react.useEffect)(() => {
+		const handleKeyDown = (event) => {
+			if (event.key === "Escape") onClose();
+		};
+		document.addEventListener("keydown", handleKeyDown);
+		document.body.style.overflow = "hidden";
+		return () => {
+			document.removeEventListener("keydown", handleKeyDown);
+			document.body.style.overflow = "";
+		};
+	}, [onClose]);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		className: "fixed inset-0 z-[100] flex items-center justify-center p-5 animate-fade-up",
-		style: { backgroundColor: "rgba(0,0,0,0.55)" },
+		className: "location-modal-backdrop fixed inset-0 z-[100] flex items-end justify-center p-3 sm:items-center sm:p-6",
+		style: { backgroundColor: "rgba(23, 31, 21, 0.72)" },
 		onClick: onClose,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "relative w-full max-w-[300px] rounded-[22px] p-4 pt-5",
-			style: { backgroundColor: CREAM },
-			onClick: (e) => e.stopPropagation(),
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
+			role: "dialog",
+			"aria-modal": "true",
+			"aria-labelledby": "location-modal-title",
+			className: "location-modal-panel relative w-full max-w-[420px] overflow-hidden rounded-[30px] border p-5 shadow-[0_28px_80px_rgba(20,30,18,0.34)] sm:p-7",
+			style: {
+				backgroundColor: CREAM,
+				borderColor: "rgba(84,114,75,0.16)"
+			},
+			onClick: (event) => event.stopPropagation(),
 			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-					"aria-label": "Close",
-					onClick: onClose,
-					className: "absolute top-3 right-3 h-7 w-7 rounded-full border flex items-center justify-center hover:bg-black/5",
-					style: { borderColor: "rgba(0,0,0,0.15)" },
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "h-3 w-3" })
-				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "flex flex-col items-center",
-					children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "relative h-10 w-10 rounded-full flex items-center justify-center",
-							style: { backgroundColor: "#F3EAD3" },
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, {
+					className: "flex items-start justify-between gap-5",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex min-w-0 items-center gap-3.5",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "location-pin-pop flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl",
+							style: { backgroundColor: BRAND },
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, {
 								className: "h-5 w-5",
-								style: { color: BRAND },
-								fill: BRAND
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-								className: "absolute -bottom-0.5 h-1.5 w-4 rounded-full",
-								style: { backgroundColor: YELLOW }
-							})]
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-							className: "mt-2 font-display text-[18px] leading-tight text-center",
+								style: { color: CREAM },
+								strokeWidth: 2.2
+							})
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "text-[10px] font-semibold uppercase tracking-[0.18em]",
 							style: { color: BRAND },
-							children: "Choose Your Location"
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-1 text-[10px] text-center opacity-70",
+							children: "Order fresh"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+							id: "location-modal-title",
+							className: "mt-0.5 text-balance font-display text-[25px] leading-none",
 							style: { color: BRAND },
-							children: "Select your nearest Brooklyn Sourdough store."
-						})
-					]
+							children: "Choose a location"
+						})] })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+						type: "button",
+						"aria-label": "Close location selector",
+						onClick: onClose,
+						className: "flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-transform duration-200 hover:scale-105 active:scale-95",
+						style: {
+							borderColor: "rgba(84,114,75,0.2)",
+							color: BRAND
+						},
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "h-4 w-4" })
+					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "mt-5 text-[14px] leading-relaxed",
+					style: { color: "rgba(84,114,75,0.78)" },
+					children: "Select your nearest bakery to see availability and place your order."
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-4 flex flex-col gap-2",
-					children: [
-						{
-							name: "Williamsburg",
-							icon: location_williamsburg_default,
-							status: "available",
-							href: TOAST_URL
-						},
-						{
-							name: "Boro Park",
-							icon: location_boro_park_default,
-							status: "available",
-							href: null
-						},
-						{
-							name: "Monsey",
-							icon: location_monsey_default,
-							status: "soon",
-							href: null
-						},
-						{
-							name: "Lakewood",
-							icon: location_lakewood_default,
-							status: "soon",
-							href: null
-						}
-					].map((loc) => {
-						const isAvail = loc.status === "available";
-						const clickable = !!loc.href;
-						const Row = /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "flex items-center gap-3 rounded-xl px-3 py-2 border transition-all",
+					className: "mt-5 flex flex-col gap-2.5",
+					children: locations.map((loc, index) => {
+						const isAvailable = loc.status === "available";
+						const isClickable = Boolean(loc.href);
+						const locationRow = /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "location-row flex min-h-[78px] items-center gap-3 rounded-2xl border px-3 py-2.5 transition-all duration-300",
 							style: {
-								borderColor: isAvail ? BRAND : "rgba(0,0,0,0.08)",
-								borderWidth: isAvail ? 1.5 : 1,
-								backgroundColor: isAvail ? "#FBF5E8" : "#F2EFE7",
-								opacity: isAvail ? 1 : .75,
-								cursor: clickable ? "pointer" : "default"
+								animationDelay: `${150 + index * 70}ms`,
+								borderColor: isClickable ? "rgba(84,114,75,0.32)" : "rgba(84,114,75,0.1)",
+								backgroundColor: isClickable ? "rgba(255,255,255,0.62)" : "rgba(84,114,75,0.045)",
+								opacity: isAvailable ? 1 : .66,
+								cursor: isClickable ? "pointer" : "default"
 							},
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-									className: "h-14 w-14 shrink-0",
+									className: "flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl",
+									style: { backgroundColor: "rgba(84,114,75,0.07)" },
 									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 										src: loc.icon,
-										alt: loc.name,
-										className: "block h-full w-full object-contain"
+										alt: "",
+										className: "h-full w-full object-contain p-1"
 									})
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "flex-1 min-w-0",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-										className: "font-display text-[13px] leading-tight",
-										style: { color: isAvail ? BRAND : "#8a8a83" },
+									className: "min-w-0 flex-1",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+										className: "font-display text-[17px] leading-tight",
+										style: { color: BRAND },
 										children: loc.name
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-										className: "mt-0.5 flex items-center gap-1 text-[9px]",
-										style: { color: isAvail ? "#3a7a4a" : "#9a988e" },
+										className: "mt-1 flex items-center gap-1.5 text-[11px] font-medium",
+										style: { color: isAvailable ? BRAND : "rgba(84,114,75,0.68)" },
 										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "h-1.5 w-1.5 rounded-full",
-											style: { backgroundColor: isAvail ? "#4CAF50" : "#B4B1A6" }
-										}), isAvail ? "Available" : "Coming Soon"]
+											style: { backgroundColor: isAvailable ? BRAND : "rgba(84,114,75,0.36)" }
+										}), isAvailable ? "Open for orders" : "Coming soon"]
 									})]
 								}),
-								isAvail ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, {
-									className: "h-4 w-4",
-									style: { color: BRAND }
-								}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "rounded-full px-2 py-0.5 text-[9px] font-semibold",
+								isClickable ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "flex h-9 w-9 shrink-0 items-center justify-center rounded-full transition-transform duration-300 group-hover:translate-x-0.5",
 									style: {
-										backgroundColor: "#F9D48A",
-										color: "#7a5a1a"
+										backgroundColor: BRAND,
+										color: CREAM
+									},
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronRight, { className: "h-4 w-4" })
+								}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "shrink-0 rounded-full px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.08em]",
+									style: {
+										backgroundColor: "rgba(84,114,75,0.1)",
+										color: BRAND
 									},
 									children: "Soon"
 								})
 							]
 						});
-						return clickable ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						return isClickable ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 							href: loc.href,
 							target: "_blank",
 							rel: "noopener noreferrer",
 							onClick: onClose,
-							children: Row
-						}, loc.name) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: Row }, loc.name);
+							className: "group rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2",
+							style: { outlineColor: BRAND },
+							children: locationRow
+						}, loc.name) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { children: locationRow }, loc.name);
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mt-4 flex items-center justify-center gap-1.5 text-[9px]",
-					style: { color: BRAND },
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "h-3 w-3" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "opacity-80",
-						children: "Freshly baked. Locally delivered."
-					})]
+					className: "mt-5 flex items-center justify-center gap-2 border-t pt-4 text-[11px] font-medium",
+					style: {
+						borderColor: "rgba(84,114,75,0.12)",
+						color: "rgba(84,114,75,0.72)"
+					},
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShieldCheck, { className: "h-4 w-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Freshly baked · Secure ordering" })]
 				})
 			]
 		})
