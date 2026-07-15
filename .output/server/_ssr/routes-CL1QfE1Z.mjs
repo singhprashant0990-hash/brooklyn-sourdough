@@ -2,7 +2,7 @@ import { n as __toESM } from "../_runtime.mjs";
 import { o as performance_default } from "../_libs/h3+rou3+srvx+unenv.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Menu, c as Clock, i as Phone, l as ChevronRight, n as Star, o as MapPin, r as ShieldCheck, s as Instagram, t as X, u as Check } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CF7QNrS5.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-CL1QfE1Z.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var custom_hero_loop_default = "/assets/custom-hero-loop-CPl5xujN.mp4";
@@ -17,7 +17,6 @@ var location_lakewood_default = "/assets/location-lakewood-CBsI0VyF.png";
 var sourdough_dips_product_default = "/assets/sourdough-dips-product-BNQFR9YN.jpg";
 var brooklyn_sourdough_header_logo_default = "/assets/brooklyn-sourdough-header-logo-DtC9CJG7.png";
 var custom_order_now_default = "/assets/custom-order-now-DTwbtrO1.png";
-var custom_whatsapp_default = "/assets/custom-whatsapp-SkwJbuTL.png";
 var classic_sourdough_gift_box_default = "/assets/classic-sourdough-gift-box-Fn3ZNhGt.jpg";
 var olive_pairing_gift_box_default = "/assets/olive-pairing-gift-box-zKKTi9_7.png";
 var crystal_arak_gift_box_default = "/assets/crystal-arak-gift-box-BrJg_78X.png";
@@ -470,10 +469,10 @@ function GiftIntroSection() {
 							children: "Gift Boxes"
 						})]
 					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						"data-reveal": true,
 						className: "mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-7 pb-2 scrollbar-none",
-						children: giftBoxCollection.map((box, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+						children: [giftBoxCollection.map((box) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 							className: "group flex w-[84%] shrink-0 snap-center flex-col text-left",
 							children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -506,20 +505,26 @@ function GiftIntroSection() {
 										},
 										children: detail
 									}, detail))
-								}),
-								index === giftBoxCollection.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-									href: TOAST_URL,
-									target: "_blank",
-									rel: "noopener noreferrer",
-									className: "mt-4 self-start rounded-full px-7 py-2.5 text-[14px] font-semibold transition-transform hover:scale-[1.04]",
-									style: {
-										backgroundColor: CREAM,
-										color: BRAND
-									},
-									children: "See More"
 								})
 							]
-						}, box.name))
+						}, box.name)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", {
+							className: "flex min-h-[320px] w-[84%] shrink-0 snap-center items-center justify-center rounded-3xl border text-center",
+							style: {
+								borderColor: "rgba(255,249,242,0.22)",
+								backgroundColor: "rgba(255,249,242,0.08)"
+							},
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								href: TOAST_URL,
+								target: "_blank",
+								rel: "noopener noreferrer",
+								className: "rounded-full px-8 py-3 text-[15px] font-semibold transition-transform hover:scale-[1.04]",
+								style: {
+									backgroundColor: CREAM,
+									color: BRAND
+								},
+								children: "See More"
+							})
+						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-4 px-7 text-center text-[10px] font-semibold uppercase tracking-[0.18em]",
@@ -656,9 +661,9 @@ function ProductRail() {
 					children: "Sourdough"
 				})]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-3 scrollbar-none",
-				children: sourdoughCollection.map((bread, index) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+				children: [sourdoughCollection.map((bread) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
 					className: "group flex w-[88%] shrink-0 snap-center flex-col text-left",
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -688,20 +693,26 @@ function ProductRail() {
 								},
 								children: detail
 							}, detail))
-						}),
-						index === sourdoughCollection.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: TOAST_URL,
-							target: "_blank",
-							rel: "noopener noreferrer",
-							className: "mt-4 self-start rounded-full px-7 py-2.5 text-[14px] font-semibold transition-transform hover:scale-[1.04]",
-							style: {
-								backgroundColor: BRAND,
-								color: CREAM
-							},
-							children: "See More"
 						})
 					]
-				}, bread.name))
+				}, bread.name)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("article", {
+					className: "flex min-h-[320px] w-[88%] shrink-0 snap-center items-center justify-center rounded-3xl border text-center",
+					style: {
+						borderColor: "rgba(84,114,75,0.2)",
+						backgroundColor: "rgba(255,255,255,0.55)"
+					},
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: TOAST_URL,
+						target: "_blank",
+						rel: "noopener noreferrer",
+						className: "rounded-full px-8 py-3 text-[15px] font-semibold transition-transform hover:scale-[1.04]",
+						style: {
+							backgroundColor: BRAND,
+							color: CREAM
+						},
+						children: "See More"
+					})
+				})]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-3 px-6 text-center text-[10px] font-semibold uppercase tracking-[0.18em] opacity-60",
@@ -1350,26 +1361,23 @@ function Footer() {
 	});
 }
 function FloatingWhatsApp() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 		href: "https://wa.me/17182127323",
 		target: "_blank",
 		rel: "noopener noreferrer",
-		"aria-label": "WhatsApp",
-		className: "fixed right-[max(1rem,calc((100vw-480px)/2+1rem))] bottom-5 z-50 flex items-center gap-2.5 animate-whatsapp-float transition-transform hover:scale-[1.05] active:scale-[0.95]",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "animate-contact-pop whitespace-nowrap rounded-full px-4 py-2 text-[13px] font-semibold",
+		"aria-label": "Contact us on WhatsApp",
+		className: "fixed right-[max(1rem,calc((100vw-480px)/2+1rem))] bottom-5 z-50 block aspect-[3.58/1] w-[min(78vw,350px)] overflow-hidden rounded-full animate-whatsapp-float shadow-[0_6px_20px_rgba(0,0,0,0.22)] transition-transform hover:scale-[1.03] active:scale-[0.98]",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+			src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Jul%2016%2C%202026%2C%2002_16_29%20AM-wcGIZTbUdUMEzmrANr4T5tUZCDMkMc.png",
+			alt: "Contact us on WhatsApp",
+			className: "absolute max-w-none",
 			style: {
-				backgroundColor: CREAM,
-				color: BRAND,
-				boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
-			},
-			children: "Contact us"
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-			src: custom_whatsapp_default,
-			alt: "WhatsApp",
-			className: "h-14 w-14 object-contain",
-			style: { filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.2))" }
-		})]
+				width: "132.5%",
+				height: "auto",
+				left: "-16.25%",
+				top: "-103.5%"
+			}
+		})
 	});
 }
 //#endregion

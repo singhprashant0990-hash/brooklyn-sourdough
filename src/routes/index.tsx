@@ -13,7 +13,6 @@ import locationLakewood from "@/assets/location-lakewood.png";
 import sourdoughDip from "@/assets/sourdough-dips-product.jpg";
 import brooklynLogo from "@/assets/brooklyn-sourdough-header-logo.png";
 import orderBtnImg from "@/assets/custom-order-now.png";
-import whatsappBtnImg from "@/assets/custom-whatsapp.png";
 import classicSourdoughGiftBox from "@/assets/classic-sourdough-gift-box.jpg";
 import olivePairingGiftBox from "@/assets/olive-pairing-gift-box.png";
 import crystalArakGiftBox from "@/assets/crystal-arak-gift-box.png";
@@ -833,17 +832,14 @@ function FloatingWhatsApp() {
       href="https://wa.me/17182127323"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="WhatsApp"
-      className="fixed right-[max(1rem,calc((100vw-480px)/2+1rem))] bottom-5 z-50 flex items-center gap-2.5 animate-whatsapp-float transition-transform hover:scale-[1.05] active:scale-[0.95]"
+      aria-label="Contact us on WhatsApp"
+      className="fixed right-[max(1rem,calc((100vw-480px)/2+1rem))] bottom-5 z-50 block aspect-[3.58/1] w-[min(78vw,350px)] overflow-hidden rounded-full animate-whatsapp-float shadow-[0_6px_20px_rgba(0,0,0,0.22)] transition-transform hover:scale-[1.03] active:scale-[0.98]"
     >
-      <span className="animate-contact-pop whitespace-nowrap rounded-full px-4 py-2 text-[13px] font-semibold" style={{ backgroundColor: CREAM, color: BRAND, boxShadow: "0 4px 12px rgba(0,0,0,0.15)" }}>
-        Contact us
-      </span>
       <img
-        src={whatsappBtnImg}
-        alt="WhatsApp"
-        className="h-14 w-14 object-contain"
-        style={{ filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.2))" }}
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Jul%2016%2C%202026%2C%2002_16_29%20AM-wcGIZTbUdUMEzmrANr4T5tUZCDMkMc.png"
+        alt="Contact us on WhatsApp"
+        className="absolute max-w-none"
+        style={{ width: "132.5%", height: "auto", left: "-16.25%", top: "-103.5%" }}
       />
     </a>
   );
