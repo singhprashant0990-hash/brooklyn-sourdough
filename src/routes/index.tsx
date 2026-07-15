@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import React, { useState, useEffect } from "react";
 import { Menu, MapPin, Star, Instagram, Phone, Clock, X, ChevronRight, ShieldCheck, Check } from "lucide-react";
-import heroVideo from "@/assets/custom-hero-loop.mp4";
+const heroVideo = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/0630%284%29-lXOz6M4uZJFV6nvBgDYBbmeSmuBp0K.mp4";
 import braidedSourdoughChallah from "@/assets/braided-sourdough-challah.png";
 import classicCountryBoule from "@/assets/classic-country-sourdough-boule.png";
 import seededSourdoughBoule from "@/assets/seeded-sourdough-boule.png";
